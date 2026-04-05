@@ -103,5 +103,39 @@ results = model.predict('your_image.jpg')
 ```
 
 ---
-
 ## Repo Structure
+
+factory-defect-guard/
+├── notebooks/
+│   └── factory_defect_training.ipynb
+├── results/
+│   ├── training_curves.png
+│   └── classwise_map.png
+├── sample_predictions/
+├── requirements.txt
+├── README.md
+└── LICENSE
+
+---
+
+## Future Improvements
+
+- Deploy as a REST API with FastAPI for real-time inference
+- Add a Gradio demo on Hugging Face Spaces
+- Improve `crazing` and `screw_defect` class accuracy (currently lowest mAP)
+- Experiment with YOLOv8m for better accuracy vs. speed tradeoff
+- Add streaming video inference support for conveyor belt integration
+
+---
+
+## Requirements
+ultralytics>=8.0.0
+huggingface-hub
+Pillow
+opencv-python
+
+---
+
+## Author
+**Negi** — ML Engineer  
+📎 [GitHub](https://github.com/chandanNegi39671) | 🤗 [Hugging Face](https://huggingface.co/negi3961)
